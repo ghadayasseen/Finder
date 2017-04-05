@@ -122,6 +122,3 @@ b14.addEventListener("click", function() {
    text13[0].style.display="block"; 
 });
 
-
-
-
