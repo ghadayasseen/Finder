@@ -58,11 +58,22 @@
                 I really don't understand why the right button is always broken. Like, are they implying something?
                 Anyway. She has nice legs. It'd be nice if you knew what her face looked like though.
                 <br><br>
-            <button><a href="javascript:;" onClick="document.getElementById('morepics').style.display='block';"></a>
+            <button><a href="javascript:;" onClick="document.getElementById('morepics').style.display='block';onclick=document.getElementById('prettyleft').style.display='none';onclick=document.getElementById('itsamatch');">
             Find more pictures
             </button>
             </div>
             
+            <div id="morepics" style="display:none;">
+                Only one picture? Seriously? Well...
+                <br><br>
+            <button><a href="javascript:;" onClick="document.getElementById('itsamatch').style.display='block';onclick=document.getElementById('morepics').style.display='none';">
+            I guess I'll trust her.
+            </button>
+            </div>
+            
+            <div id="itsamatch" style="display:none;">
+                It's a match!
+            </div>
             
             <!--emo choices-->
             
