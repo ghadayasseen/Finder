@@ -118,8 +118,8 @@ b13.addEventListener("click", function() {
 });
 
 b14.addEventListener("click", function() {
-   text12[1].style.display="block";
-   text13[0].style.display="none"; 
+   text12[1].style.display="none";
+   text13[0].style.display="block"; 
 });
 
 
