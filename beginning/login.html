@@ -23,7 +23,9 @@
         <div src="display" id="dialegs" style="display:none;">
         <center><img src="../image/dialegs.png" width="54%"></center>
         </div>
-
+        <div src="display" id="itsamatchpic" style="display:none;">
+        <center><img src="../image/itsamatch.png" width="54%"></center>
+        </div>
         </center>
     </td>
     <td class=column2>
@@ -66,14 +68,23 @@
             <div id="morepics" style="display:none;">
                 Only one picture? Seriously? Well...
                 <br><br>
-            <button><a href="javascript:;" onClick="document.getElementById('itsamatch').style.display='block';onclick=document.getElementById('morepics').style.display='none';">
+            <button><a href="javascript:;" onClick="document.getElementById('itsamatch').style.display='block';onclick=document.getElementById('morepics').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='block';onclick=document.getElementById('dialegs').style.display='none';">
             I guess I'll trust her.
             </button>
             </div>
             
             <div id="itsamatch" style="display:none;">
-                It's a match!
+                It's a match! You have a feeling that if you keep fishing, the buttons will continue to not work.
+                <br><br>
+            <button><a href="javascript:;" onClick="document.getElementById('sendmessage').style.display='block';onclick=document.getElementById('itsamatch').style.display='none';">
+                Send Message
+            </button>
             </div>
+            
+            <div id="sendmessage" style="display:none;">
+                Hey. *heart eyes*
+            </div>
+
             
             <!--emo choices-->
             
