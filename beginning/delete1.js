@@ -13,8 +13,6 @@ var text8 = document.getElementsByClassName("text8");
 var text9 = document.getElementsByClassName("text9");
 var text10 = document.getElementsByClassName("text10");
 var text11 = document.getElementsByClassName("text11");
-var text12 = document.getElementsByClassName("text12");
-var text13 = document.getElementsByClassName("text13");
 
 var b1 = document.getElementById("b1");
 var b2 = document.getElementById("b2");
@@ -28,9 +26,6 @@ var b9 = document.getElementById("b9");
 var b10 = document.getElementById("b10");
 var b11 = document.getElementById("b11");
 var b12 = document.getElementById("b12");
-var b13 = document.getElementById("b13");
-var b14 = document.getElementById("b14");
-var b15 = document.getElementById("b15");
 
 
 
@@ -97,28 +92,19 @@ b9.addEventListener("click", function() {
 
 b10.addEventListener("click", function() {
    text9[0].style.display="block";
-   text8[0].style.display="none"; 
+   text8[0].style.display="none";
 });
 
 b11.addEventListener("click", function() {
    text10[0].style.display="block";
-   text9[0].style.display="none"; 
+   text10[1].style.display="block";
+   text9[0].style.display="none";
+   text6[0].style.display="none";
+
 });
 
 b12.addEventListener("click", function() {
    text11[0].style.display="block";
-   text10[0].style.display="none"; 
-});
-
-b13.addEventListener("click", function() {
-   text6[0].style.display="none"; 
-   text11[0].style.display="none";
-   text12[0].style.display="block";
-   text12[1].style.display="block";
-});
-
-b14.addEventListener("click", function() {
-   text12[1].style.display="none";
-   text13[0].style.display="block"; 
+   text10[1].style.display="none"; 
 });
 
