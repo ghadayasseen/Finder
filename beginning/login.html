@@ -27,6 +27,22 @@
         <center><img src="../image/itsamatch.png" width="54%"></center>
         </div>
         </center>
+        <div src="display" id="heyhearteyes" style="display:none;">
+        <center><img src="../image/heyhearteyes.png" width="54%"></center>
+        </div>
+        </center>
+        <div src="display" id="heytidefish" style="display:none;">
+        <center><img src="../image/heytidefish.png" width="54%"></center>
+        </div>
+        </center>     
+        <div src="display" id="meetatsakana" style="display:none;">
+        <center><img src="../image/meetatsakana.png" width="54%"></center>
+        </div>
+        </center> 
+        <div src="display" id="yestotally" style="display:none;">
+        <center><img src="../image/yestotally.png" width="54%"></center>
+        </div>
+        </center>  
     </td>
     <td class=column2>
         <center>
@@ -73,18 +89,44 @@
             </button>
             </div>
             
+            
+            <!--The image here doesn't work.-->
             <div id="itsamatch" style="display:none;">
                 It's a match! You have a feeling that if you keep fishing, the buttons will continue to not work.
                 <br><br>
-            <button><a href="javascript:;" onClick="document.getElementById('sendmessage').style.display='block';onclick=document.getElementById('itsamatch').style.display='none';">
+            <button><a href="javascript:;" onClick="document.getElementById('sendmessage').style.display='block';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='block';onclick=document.getElementById('itsamatchpic').style.display='none';o">
                 Send Message
             </button>
             </div>
             
             <div id="sendmessage" style="display:none;">
-                Hey. *heart eyes*
+            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='block';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('sendmessage').style.display='none';onclick=document.getElementById('heytidefish').style.display='block';onclick=document.getElementById('heyhearteyes').style.display='none';">
+            Wait for a reply.
+            </button>
             </div>
 
+            <div id="wait" style="display:none;">
+                Wow, that was fast. She seems nice though.
+            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='none';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('meetatsakana').style.display='block';onclick=document.getElementById('pleasesayyes').style.display='block';onclick=document.getElementById('heytidefish').style.display='none';">
+            Wanna meet up at Sakana at 5pm tomorrow? It's on me. *halo face*
+            </button>
+            </div>
+
+
+            <div id="pleasesayyes" style="display:none;">
+                You've never been so enthusiastic for a date. You just have this... gut feeling, you know?
+            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='none';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('yestotally').style.display='block';onclick=document.getElementById('shesaidyes').style.display='block';onclick=document.getElementById('heytidefish').style.display='none';onclick=document.getElementById('pleasesayyes').style.display='none';onclick=document.getElementById('meetatsakana').style.display='none';">
+            Wait for her response. (please say yes, Dia)
+            </button>
+            </div>
+
+            <div id="shesaidyes" style="display:none;">
+                Maybe this will work out after all...
+            
+            <button><a href="fin.html">
+            24 hours later...
+            </button>
+            </div>
             
             <!--emo choices-->
             
