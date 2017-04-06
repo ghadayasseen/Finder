@@ -36,7 +36,6 @@ b1.addEventListener("click", function(){
    text2[1].style.display="block";
    text1[0].style.display="none";
    text1[1].style.display="none";
-   
 });
 
 b2.addEventListener("click", function(){
@@ -44,7 +43,6 @@ b2.addEventListener("click", function(){
       text3[1]. style.display="block";
       text1[0].style.display="none";
       text1[1].style.display="none";
-      
 });
 
 b3.addEventListener("click", function() {
