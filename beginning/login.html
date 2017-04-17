@@ -50,6 +50,7 @@
             <div id="looksingles">
                 After finishing your profile, it's time to look through the eligible singles in your neighborhood.
                 <br><br>
+                <!--A button. Hides letsgetstarted (image that is currently showing) and looksingles (the current div ). Shows next image (mermaid1) and next div (istarted) -->
                 <button><a href="javascript:;" onClick="document.getElementById('letsgetstarted').style.display='none';onClick=document.getElementById('looksingles').style.display='none';onClick=document.getElementById('mermaid1').style.display='block';onClick=document.getElementById('istarted').style.display='block';">
                 Let's get started! </button>
             </div>
@@ -58,15 +59,16 @@
                 <br><br>    
                 Swipe left to reject, and swipe right to like.
                 <br><br>
+                <!-- Another button. Shows emoleft (next div) and hides istarted (current div). hides mermaid1 (current), and shows mermaid 2 (next).-->
             <button><a href="javascript:;" onClick="document.getElementById('emoleft').style.display='block';onclick=document.getElementById('istarted').style.display='none';onClick=document.getElementById('mermaid1').style.display='none';onClick=document.getElementById('mermaid2').style.display='block';">
                 Swipe Left</button>
-            <button> <a href="javascript:;" onClick="document.getElementById('emoright').style.display='block';onClick=document.getElementById('istarted').style.display='none';">
-                Swipe Right</button>
+            <button>Swipe Right</button>
             </div>
             
             <div id="emoleft" style="display:none;">
                 Good choice. Though, I guess it's not much of a choice if the button is broken. Who developed this app anyway? It's kinda bad.
                 <br><br>
+                <!-- Button. Shows prettyleft (next div) and hides emoleft (current div). shows dialegs (next img) and hides mermaid2 (current img).-->
             <button><a href="javascript:;" onClick="document.getElementById('prettyleft').style.display='block';onclick=document.getElementById('emoleft').style.display='none';onclick=document.getElementById('dialegs').style.display='block';onclick=document.getElementById('mermaid2').style.display='none';">
             Swipe Left</button>
             <button>Swipe Right</button>
@@ -76,7 +78,8 @@
                 I really don't understand why the right button is always broken. Like, are they implying something?
                 Anyway. She has nice legs. It'd be nice if you knew what her face looked like though.
                 <br><br>
-            <button><a href="javascript:;" onClick="document.getElementById('morepics').style.display='block';onclick=document.getElementById('prettyleft').style.display='none';onclick=document.getElementById('itsamatch');">
+                <!--Button. Shows morepics while hiding prettyleft.-->
+            <button><a href="javascript:;" onClick="document.getElementById('morepics').style.display='block';onclick=document.getElementById('prettyleft').style.display='none';">
             Find more pictures
             </button>
             </div>
@@ -84,6 +87,7 @@
             <div id="morepics" style="display:none;">
                 Only one picture? Seriously? Well...
                 <br><br>
+                <!--button. Shows itsamatch (next div), hides morepics (current img), shows itsamatchpic (next img), hides dialegs (current img)-->
             <button><a href="javascript:;" onClick="document.getElementById('itsamatch').style.display='block';onclick=document.getElementById('morepics').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='block';onclick=document.getElementById('dialegs').style.display='none';">
             I guess I'll trust her.
             </button>
@@ -92,20 +96,23 @@
             <div id="itsamatch" style="display:none;">
                 It's a match! You have a feeling that if you keep fishing, the buttons will continue to not work.
                 <br><br>
+                <!--button shows sendmessage (next div), hides itsamatch (current div), shows heyhearteyes (next img), hides itsamatchpic (current img)-->
             <button><a href="javascript:;" onClick="document.getElementById('sendmessage').style.display='block';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='block';onclick=document.getElementById('itsamatchpic').style.display='none';o">
                 Send Message
             </button>
             </div>
             
             <div id="sendmessage" style="display:none;">
-            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='block';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('sendmessage').style.display='none';onclick=document.getElementById('heytidefish').style.display='block';onclick=document.getElementById('heyhearteyes').style.display='none';">
+                <!--button shows wait (next div), hides sendmessage (current div), shows heytidefish (next image) hides heyhearteyes (current image)-->
+            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='block';onclick=document.getElementById('sendmessage').style.display='none';onclick=document.getElementById('heytidefish').style.display='block';onclick=document.getElementById('heyhearteyes').style.display='none';">
             Wait for a reply.
             </button>
             </div>
 
             <div id="wait" style="display:none;">
                 Wow, that was fast. She seems nice though.
-            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='none';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('meetatsakana').style.display='block';onclick=document.getElementById('pleasesayyes').style.display='block';onclick=document.getElementById('heytidefish').style.display='none';">
+                <!--button hides wait (current div), hides itsamatchpic (current img), shows meetatsakana (next img), hides heytidefish (current image)-->
+            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='none';onclick=document.getElementById('meetatsakana').style.display='block';onclick=document.getElementById('pleasesayyes').style.display='block';onclick=document.getElementById('heytidefish').style.display='none';">
             Wanna meet up at Sakana at 5pm tomorrow? It's on me. *halo face*
             </button>
             </div>
@@ -113,53 +120,20 @@
 
             <div id="pleasesayyes" style="display:none;">
                 You've never been so enthusiastic for a date. You just have this... gut feeling, you know?
-            <button><a href="javascript:;" onClick="document.getElementById('wait').style.display='none';onclick=document.getElementById('itsamatchpic').style.display='none';onclick=document.getElementById('heyhearteyes').style.display='none';onclick=document.getElementById('itsamatch').style.display='none';onclick=document.getElementById('yestotally').style.display='block';onclick=document.getElementById('shesaidyes').style.display='block';onclick=document.getElementById('heytidefish').style.display='none';onclick=document.getElementById('pleasesayyes').style.display='none';onclick=document.getElementById('meetatsakana').style.display='none';">
+                <!--button hides heyhearteyes (current image), hides pleasesayyes current (current div), shows yestotally (next img), shows shesaidyes (next div)-->
+            <button><a href="javascript:;" onClick="document.getElementById('heyhearteyes').style.display='none';onclick=document.getElementById('pleasesayyes').style.display='none';onclick=document.getElementById('yestotally').style.display='block';onclick=document.getElementById('shesaidyes').style.display='block';">
             Wait for her response. (please say yes, Dia)
             </button>
             </div>
 
             <div id="shesaidyes" style="display:none;">
                 Maybe this will work out after all...
-            
+                <!--button links to end page-->
             <button><a href="fin.html">
             24 hours later...
             </button>
             </div>
             
-            <!--emo choices-->
-            
-            
-            <!--emo choices
-            <div id="emoleft" style="display:none;">
-                Good choice.
-                <br>
-                Oh, she's pretty.
-                    <div id="brokenlink" style="display:none;">
-                        Too bad the link is broken.
-                    </div>     
-                    <div id="whywould" style="display:none;">
-                        Why would you do that?
-                    </div>  
-                <br><br><br>
-                
-                    <button><a href="javascript:;" onClick="document.getElementById('whywould').style.display='block';">
-                Swipe Left</button>
-                    <button> <a href="javascript:;" onClick="document.getElementById('brokenlink').style.display='block';onClick=document.getElementById('istarted').style.display='none';">
-                Swipe Right</button>
-            </div>
-            
-            <div id="emoright" style="display:none;">
-                ... She's 14. And emo. Try again.
-                <br><br><br>
-                    <button><a href="javascript:;" onClick="document.getElementById('emoleft').style.display='block';onClick=document.getElementById('mermaid2').style.display='block';onClick=document.getElementById('emoright').style.display='none';onClick=document.getElementById('mermaid1').style.display='none';">
-                Swipe Left</button>
-                    <button> <a href="javascript:;" onClick="document.getElementById('emoright').style.display='block';onClick=document.getElementById('istarted').style.display='none';">
-                Swipe Right</button>
-            </div>
-            -->
-            
-            <!--after emoright-->
-              
             </div> 
         </div>
         </center>
@@ -167,13 +141,6 @@
     </td> 
   </tr>
 </table>
-
-
-
-
-
-
-
 
 
 <script src="login.js"></script>
